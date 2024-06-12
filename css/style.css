@@ -112,6 +112,23 @@ a{
     opacity: 90%;
 }
 
+#menu-icon {
+    display: none;
+}
+
+
+#close-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 1111;
+}
+
+
 button {
     background-color: var(--primary-color);
     border: none;
@@ -132,7 +149,6 @@ button:hover{
 
 #home{
     max-width: 100%;
-    
     padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -588,6 +604,11 @@ footer p{
         max-width: 1280px; 
         margin: 0 auto;
     }
+
+    #menu-icon {
+        display: none;
+    }
+
 }
 
 
@@ -612,10 +633,11 @@ footer p{
         text-align: center; 
     }
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        padding: 10px;
-        position: relative;
+        padding: 0 10px;
+        min-height: 10vh;
+        position: fixed;
     }
 
     .service-heading{
@@ -636,6 +658,12 @@ footer p{
 
     .nav-right ul li a {
         font-size: 12px;
+        color: white;
+    }
+
+    .nav-right ul li{
+        width: 100%;
+        padding-left: 20px;
     }
 
 
@@ -689,6 +717,7 @@ footer p{
     .image-container {
         height: 200px;
         margin: 20px 0;
+        margin-top: 60px;
     }
 
     .socials {
@@ -707,14 +736,19 @@ footer p{
     }
 
     .blog-card {
-        height: auto;
-        width: auto;
+        height: 70%;
+        width: 100%;
         margin-bottom: 20px;
     }
 
-    .services-content, .blog-content {
+    .services-content{
         flex-direction: column;
         align-items: center;
+    }
+
+    .blog-content{
+        flex-direction: column;
+        margin: 0 10%;
     }
 
     .blog-heading{
@@ -767,7 +801,7 @@ footer p{
 
     .blog-time-content{
         position: relative;
-        left: 135px;
+        left: 66%;
         height: auto;
         bottom: 28px;
     }
@@ -780,4 +814,73 @@ footer p{
     .blog-button button{
         margin: auto;
     }
+    
+
+    .nav-right ul, .nav-right button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        opacity: 80%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        padding-top: 50px;
+        z-index: 11;
+    }
+
+    .nav-links.active {
+        display: flex;
+        z-index: 111;
+        color: white;
+        padding: 0;
+        margin: 0; 
+        
+    }
+
+    
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 10px 0;
+
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: black; 
+    }
+
+    .nav-links.active #close-icon {
+        display: block; 
+    }
+
+    .nav-links.active #menu-icon {
+        display: none;
+    }
+
+    .nav-links.active .nav-left a img{
+        
+    }
+
+    .nav-right ul li a::after, .footer-social ul li a::after, .footer-links ul li a::after, .email-par::after{
+        background-color: white;
+    }
+
+
+    .nav-right ul li a:hover::after, .footer-social ul li a:hover::after, .footer-links ul li a:hover::after, .email-par:hover::after {
+        width: 100%;
+    }
+
+    
 }
