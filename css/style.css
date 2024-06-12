@@ -134,7 +134,7 @@ button:hover{
 
 #home{
     width: 1280px;
-    min-height: 100vh;
+    min-height: 50vh;
     padding-bottom: 50px;
 }
 .home-content{
@@ -207,7 +207,7 @@ button:hover{
 
 #services{
     width: 1280px;
-    min-height: 100vh;
+    min-height: 50vh;
     padding-bottom: 50px;
 }
 
@@ -278,7 +278,7 @@ button:hover{
 
 #discovery{
     width: 1280px;
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -357,7 +357,7 @@ button:hover{
 
 #blog{
     width: 1280px;
-    min-height: 100vh;
+    min-height: 50vh;
     background-image: url(../image/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -365,11 +365,11 @@ button:hover{
     padding-bottom: 50px;
 }
 
-.blog-card {
+/* .blog-card {
     height: 320px;
     width: 320px;
     border: 1px solid black;
-}
+} */
 
 .blog-card-img img {
     width: 320px;
@@ -383,6 +383,7 @@ button:hover{
 }
 
 .blog-card-content{
+    width: 100%;
     padding: 20px 30px;
     margin-top: -60px;
 }
