@@ -869,10 +869,6 @@ footer p{
         display: none;
     }
 
-    .nav-links.active .nav-left a img{
-        
-    }
-
     .nav-right ul li a::after, .footer-social ul li a::after, .footer-links ul li a::after, .email-par::after{
         background-color: white;
     }
@@ -882,5 +878,4 @@ footer p{
         width: 100%;
     }
 
-    
 }
