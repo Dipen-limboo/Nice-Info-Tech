@@ -668,9 +668,9 @@ footer p{
         padding: 2px 5px;
     }
 
-    .card {
+    .card, .blog-card {
         height: auto;
-        width: 100%;
+        width: 322px;;
         margin-bottom: 20px;
     }
 
