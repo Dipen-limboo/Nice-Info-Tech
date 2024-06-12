@@ -43,7 +43,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-        align-items: center;
+    align-items: center;
     z-index: 1111;
     transition: top 0.5s ease-in-out; 
 }    
@@ -247,6 +247,7 @@ button:hover{
     width: 240px;
     overflow: hidden;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .card-image img {
@@ -402,6 +403,7 @@ button:hover{
     padding-bottom: 10px;
     background-color: #fff;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .blog-time-content{
@@ -437,7 +439,6 @@ button:hover{
 
 footer{
     width: 100%;
-    
     padding: 50px 80px 0 80px;
     color: var(--font-secondary-color);
     background-color: var(--font-color);
@@ -615,6 +616,11 @@ footer p{
 
 /* For mobile phones */
 @media (max-width: 480px) {
+    body, .firstpage, .navbar, #home, #services, #discovery, #blog, footer {
+        max-width: 480; /* Set a maximum width of 1280px */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+
     .navbar {
         flex-direction: column;
         align-items: center;
