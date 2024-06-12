@@ -11,7 +11,7 @@
 }
 
 body{
-    width: 1280px;
+    max-width: 100%;
     font-family:'Quicksand';
     font-weight: 600;
 }
@@ -23,8 +23,8 @@ a{
 }
 
 .firstpage{
-    width: 1280px;
-    min-height: 100vh;
+    max-width: 100%;
+    
     background-image: url(../image/index-background.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -39,12 +39,11 @@ a{
     background-size: cover;
     position: fixed; 
     top: 0; 
-    width: 1280px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 10vh;
-    align-items: center;
+        align-items: center;
     z-index: 1111;
     transition: top 0.5s ease-in-out; 
 }    
@@ -133,15 +132,14 @@ button:hover{
 } 
 
 #home{
-    width: 1280px;
-    min-height: 50vh;
+    max-width: 100%;
+    
     padding-bottom: 50px;
-}
-.home-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 
 .image-container{
     background-image: url(../image/home-image.jpg);
@@ -206,8 +204,8 @@ button:hover{
 }
 
 #services{
-    width: 1280px;
-    min-height: 50vh;
+    width: 100%;
+    
     padding-bottom: 50px;
 }
 
@@ -277,8 +275,8 @@ button:hover{
 }
 
 #discovery{
-    width: 1280px;
-    min-height: 50vh;
+    width: 100%;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -289,7 +287,7 @@ button:hover{
 .discovery-left, .discovery-right-content{
     margin-top: 100px;
     width: 500px;
-    min-height: 85vh;
+    
 }
 
 .discovery-left-image img{
@@ -356,8 +354,8 @@ button:hover{
 }
 
 #blog{
-    width: 1280px;
-    min-height: 50vh;
+    width: 100%;
+    
     background-image: url(../image/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -438,8 +436,8 @@ button:hover{
 }
 
 footer{
-    width: 1280px;
-    min-height: 50vh;
+    width: 100%;
+    
     padding: 50px 80px 0 80px;
     color: var(--font-secondary-color);
     background-color: var(--font-color);
@@ -603,6 +601,17 @@ footer p{
         margin-bottom: 20px;
     }
 }
+
+
+
+@media (min-width: 1281px) {
+    /* Apply styles when the viewport width is greater than 1280px */
+    body, .firstpage, .navbar, #home, #services, #discovery, #blog, footer {
+        max-width: 1280px; /* Set a maximum width of 1280px */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+}
+
 
 /* For mobile phones */
 @media (max-width: 480px) {
