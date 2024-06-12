@@ -24,7 +24,6 @@ a{
 
 .firstpage{
     max-width: 100%;
-    
     background-image: url(../image/index-background.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -297,22 +296,6 @@ button:hover{
     border-radius: 20px;
 }
 
-/* .discovery-left-content{
-    height: 160px;
-    width: 260px;
-    background-color: #494ECA;
-    border-radius: 10px;
-    position: relative;
-    bottom: 164px;
-    left: 250px;
-    z-index: 1;
-    padding: 30px;
-}
-
-.discovery-left-content h2{
-    text-align: center;
-    color: var(--font-secondary-color);
-} */
 
 .discovery-right-content {
     padding: 30px 60px 0 20px;
@@ -364,11 +347,6 @@ button:hover{
     padding-bottom: 50px;
 }
 
-/* .blog-card {
-    height: 320px;
-    width: 320px;
-    border: 1px solid black;
-} */
 
 .blog-card-img img {
     width: 320px;
@@ -606,26 +584,42 @@ footer p{
 
 
 @media (min-width: 1281px) {
-    /* Apply styles when the viewport width is greater than 1280px */
     body, .firstpage, .navbar, #home, #services, #discovery, #blog, footer {
-        max-width: 1280px; /* Set a maximum width of 1280px */
-        margin: 0 auto; /* Center the content horizontally */
+        max-width: 1280px; 
+        margin: 0 auto;
     }
 }
 
 
-/* For mobile phones */
 @media (max-width: 480px) {
     body, .firstpage, .navbar, #home, #services, #discovery, #blog, footer {
-        max-width: 100%; /* Set a maximum width of 1280px */
-        margin: 0 auto; /* Center the content horizontally */
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
 
+    #blog{
+        padding-bottom: 20px;
+    }
+    #services, #blog, #discovery{
+        align-items: center;
+        text-align: center;
+    }
+
+    #services, #blog, .footer-office{
+        width: 100%;
+        display: block; 
+        text-align: center; 
+    }
     .navbar {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        position: relative;
+    }
 
+    .service-heading{
+        width: 100%;
     }
 
     .nav-left,
@@ -644,27 +638,49 @@ footer p{
         font-size: 12px;
     }
 
-    .home-content {
-        padding: 10px;
-    }
 
     .home-right-content {
         text-align: center;
         margin: 10px 50px;
+        margin-top: -14rem;
     }
 
-    .home-right-content h2,  h1 {
+    .home-right-content h2 {
         font-size: 28px;
         line-height: 34px;
     }
 
-    .home-right-content p {
+    .service-heading h1, .discovery-right-content h1, .blog-heading h1{ 
+        font-size: 24px;
+        line-height: 34px;
+        margin: 10px 50px;
+    }
+
+    .service-heading p, .par {
+        font-size: 10px;
+    }
+
+    .services-button button{
+        margin: auto;
+    }
+
+    .home-right-content p, .par-content{
         font-size: 14px;
+    }
+
+    .par-content{
+        margin: 10px 50px;
     }
 
     .home-right-content .btn {
         padding: 10px 15px;
     }
+
+    .discovery-right-content h3{
+        text-align: left;
+        margin: 10px 50px;
+    }
+
 
     .home-right-content .btn a {
         font-size: 12px;
@@ -684,15 +700,25 @@ footer p{
         padding: 2px 5px;
     }
 
-    .card, .blog-card {
+    .card {
         height: auto;
-        width: 322px;;
+        width: auto;;
         margin-bottom: 20px;
     }
 
-    .services-content {
+    .blog-card {
+        height: auto;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .services-content, .blog-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .blog-heading{
+        width: 100%;
     }
 
     .discovery-left,
@@ -702,20 +728,56 @@ footer p{
         padding: 0 10px;
     }
 
-    .blog-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 
     .footer-section {
         flex-direction: column;
         align-items: center;
     }
 
+    .email-par{
+        width: 100%;
+    }
+
     .footer-office,
     .footer-links,
-    .footer-social {
+    .footer-social, .copyright {
+        padding-top: 40px;
         width: 100%;
         text-align: center;
+    }
+
+    .discovery-left-image img{
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .blog-card-img img{
+        height: auto;
+        width: 100%;
+    }
+
+    .blog-card-content h1{
+        font-size: 18px;
+    }
+
+    .blog-card-content p{
+        font-size: 10px;
+    }
+
+    .blog-time-content{
+        position: relative;
+        left: 135px;
+        height: auto;
+        bottom: 28px;
+    }
+
+    .blog-time-content h3{
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .blog-button button{
+        margin: auto;
     }
 }
