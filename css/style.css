@@ -11,7 +11,7 @@
 }
 
 body{
-    min-height: 1024px;
+    width: 1280px;
     font-family:'Quicksand';
     font-weight: 600;
 }
@@ -23,6 +23,7 @@ a{
 }
 
 .firstpage{
+    width: 1280px;
     min-height: 100vh;
     background-image: url(../image/index-background.jpeg);
     background-position: center;
@@ -38,13 +39,13 @@ a{
     background-size: cover;
     position: fixed; 
     top: 0; 
-    width: 100%; 
+    width: 1280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-height: 10vh;
     align-items: center;
-    z-index: 1;
+    z-index: 1111;
     transition: top 0.5s ease-in-out; 
 }    
 
@@ -132,6 +133,7 @@ button:hover{
 } 
 
 #home{
+    width: 1280px;
     min-height: 100vh;
     padding-bottom: 50px;
 }
@@ -204,6 +206,7 @@ button:hover{
 }
 
 #services{
+    width: 1280px;
     min-height: 100vh;
     padding-bottom: 50px;
 }
@@ -274,6 +277,7 @@ button:hover{
 }
 
 #discovery{
+    width: 1280px;
     min-height: 70vh;
     display: flex;
     flex-wrap: wrap;
@@ -352,6 +356,7 @@ button:hover{
 }
 
 #blog{
+    width: 1280px;
     min-height: 100vh;
     background-image: url(../image/background.jpg);
     background-position: center;
@@ -432,6 +437,7 @@ button:hover{
 }
 
 footer{
+    width: 1280px;
     min-height: 50vh;
     padding: 50px 80px 0 80px;
     color: var(--font-secondary-color);
