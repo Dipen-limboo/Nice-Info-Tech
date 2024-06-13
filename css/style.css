@@ -715,7 +715,7 @@ footer p{
     }
 
     .home-right-content .btn {
-        padding: 10px 15px;
+        padding: 15px;
     }
 
     .discovery-right-content h3{
@@ -768,7 +768,7 @@ footer p{
     }
 
     .blog-card {
-        height: 61vh;
+        height: 56vh;
         width: 100%;
         margin-bottom: 50px;
         opacity: 0;
@@ -825,7 +825,7 @@ footer p{
     }
 
     .blog-card-img img{
-        height: 42vh;
+        height: 36vh;
         width: 100%;
     }
 
