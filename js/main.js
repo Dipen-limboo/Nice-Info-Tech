@@ -42,6 +42,46 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll('section');
+    const contents = document.querySelectorAll('.home-right-content');
+    const cards = document.querySelectorAll('.card');
+    const blogs = document.querySelectorAll('.blog-card');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+
+    blogs.forEach(blog => {
+        observer.observe(blog);
+    });
+
+    contents.forEach(content => {
+        observer.observe(content);
+    });
+});
+
 
 
 

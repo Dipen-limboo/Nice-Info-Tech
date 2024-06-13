@@ -147,6 +147,7 @@ button:hover{
     opacity: 100%;
 } 
 
+
 #home{
     max-width: 100%;
     padding-bottom: 50px;
@@ -312,6 +313,16 @@ button:hover{
     border-radius: 20px;
 }
 
+section, .home-right-content, .card, .blog-card {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section.show,.card.show, .blog-card.show, .home-right-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .discovery-right-content {
     padding: 30px 60px 0 20px;
@@ -355,7 +366,6 @@ button:hover{
 
 #blog{
     width: 100%;
-    
     background-image: url(../image/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -365,7 +375,7 @@ button:hover{
 
 
 .blog-card-img img {
-    width: 320px;
+    width: 100%;
     height: 220px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -398,6 +408,8 @@ button:hover{
     background-color: #fff;
     cursor: pointer;
     margin-bottom: 20px;
+    background: transparent;
+    box-shadow:6px 6px 6px grey;
 }
 
 .blog-time-content{
@@ -635,7 +647,7 @@ footer p{
     .navbar {
         flex-direction: row;
         align-items: center;
-        padding: 0 10px;
+        padding: 0 18px;
         min-height: 10vh;
         position: fixed;
     }
@@ -652,12 +664,14 @@ footer p{
 
     .nav-right ul {
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         gap: 10px;
     }
 
     .nav-right ul li a {
-        font-size: 12px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        margin-bottom: 14px;
         color: white;
     }
 
@@ -715,7 +729,6 @@ footer p{
     }
 
     .image-container {
-        height: 200px;
         margin: 20px 0;
         margin-top: 60px;
     }
@@ -729,16 +742,38 @@ footer p{
         padding: 2px 5px;
     }
 
+    section {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+    
+    section.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
     .card {
         height: auto;
         width: auto;;
         margin-bottom: 20px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .card.show, .blog-card.show {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .blog-card {
-        height: 70%;
+        height: 61vh;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     }
 
     .services-content{
@@ -748,11 +783,13 @@ footer p{
 
     .blog-content{
         flex-direction: column;
-        margin: 0 10%;
+        margin: 0 3%;
     }
 
     .blog-heading{
         width: 100%;
+        margin-top: -2px;
+        margin-bottom: 12px;
     }
 
     .discovery-left,
@@ -775,6 +812,7 @@ footer p{
     .footer-office,
     .footer-links,
     .footer-social, .copyright {
+        padding: 0 20px;
         padding-top: 40px;
         width: 100%;
         text-align: center;
@@ -787,16 +825,19 @@ footer p{
     }
 
     .blog-card-img img{
-        height: auto;
+        height: 42vh;
         width: 100%;
     }
 
     .blog-card-content h1{
+        -webkit-line-clamp: 2;
         font-size: 18px;
     }
 
     .blog-card-content p{
         font-size: 10px;
+        color: var(--font-color);
+        opacity: 100%;
     }
 
     .blog-time-content{
@@ -823,7 +864,6 @@ footer p{
     .nav-links {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         background-color: black;
         opacity: 80%;
@@ -831,7 +871,7 @@ footer p{
         top: 0;
         left: 0;
         width: 100%;
-        height: 80%;
+        height: 50%;
         padding-top: 50px;
         z-index: 11;
     }
@@ -840,19 +880,17 @@ footer p{
         display: flex;
         z-index: 111;
         color: white;
-        padding: 0;
+        padding-top: 66px;
         margin: 0; 
-        
-    }
-
-    
+    }    
+/* 
     .nav-links li a {
         color: white;
         text-decoration: none;
         font-size: 18px;
         margin: 10px 0;
 
-    }
+    } */
 
     #menu-icon {
         display: block;
