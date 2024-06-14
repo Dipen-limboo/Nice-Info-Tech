@@ -1,0 +1,237 @@
+.card-image i {
+    font-size: 80px;
+    color: midnightblue;
+    padding: 20px 0;
+}
+
+.card-content p{
+    padding: 6px 0;
+    color: initial;
+}
+
+.service-heading h1{
+    padding: 40px 0;
+}
+
+.card-content p a{
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 88%;
+    padding-bottom: 6px;
+    text-decoration: none;
+    color: black;
+    position: relative; 
+}
+
+.card-content p a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; 
+    width: 100%;
+    background: black;
+    transition: width 0.5s ease-out;
+}
+
+
+.card-content p a:hover::after{
+    width: 0%;
+}
+
+.card-content p:hover{
+    color: black;
+    opacity: 1;
+}
+
+.card-content p:hover a {
+    color: black;
+}
+
+
+.services-content{
+    margin-top: 0;
+}
+
+.services-button button {
+    margin: 0 0 0 562px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto; 
+    padding: 20px 0;
+}
+
+#location{
+    padding-bottom: 0;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none; /* Remove border */
+}
+
+.discovery-right-content{
+    margin-top: 0;
+}
+
+.contact-div {
+    display: flex;
+    gap: 20px;
+    color: var(--font-color);
+    padding: 16px 0;
+}
+
+.contact-div p{
+    opacity: 70%;
+} 
+
+.contact-div i{
+    color: midnightblue;
+    opacity: 90%;
+}
+
+.discovery-left {
+    margin-top: 60px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.form-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+
+.form-div input:focus, .form-div input,.form-div textarea{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 5px;
+    font-family: 'Quicksand';
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+
+.form-div i {
+    font-size: 20px;
+    opacity: 80%;
+}
+
+
+.form-div::after {
+    width: 100%;
+    opacity: 40%;
+    height: 1.5px; 
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 1));
+    background-size: 200% 100%; 
+    background-position: right bottom;
+    transition: background-position 0.5s ease-in-out; 
+}
+
+.form-div:hover::after {
+    background-position: left bottom;
+}
+
+
+.message-div{
+    padding: 20px 0;
+}
+
+.form-btn{
+    padding: 10px 0;
+}
+
+.form-btn input{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 14px 24px;
+    opacity: 85%;
+    color: var(--font-secondary-color);
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+.form-btn input:hover{
+    opacity: 100%;
+    transition: 0.5s ease;
+}
+
+.contact-div .number{
+    opacity: 100%;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder,
+textarea::placeholder {
+    opacity: 1; 
+}
+
+/* mobile responsiveness */
+@media (max-width: 480px) {
+    .card-image i{
+        font-size: 70px;
+    }
+
+    .services-content{
+        margin: 0 14%;
+    }
+
+    .map-container{
+        margin-top: 50px;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    .map-container iframe{
+        height: 60vh;
+    }
+    
+    .contact-div{
+        padding-left:14%;
+    }
+
+    .form-div{
+        padding: 20px 2%; 
+        display: flex;
+        width: auto; 
+    }
+
+    .form-div i {
+        margin-right: 0 10px; 
+        font-size: 16px; 
+    }
+
+    .form-div input {
+        flex-grow: 1;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .form-row, .message-div{
+        display: flex;
+        flex-direction: column;
+        padding: 0 14%;
+    }
+
+    .service-heading{
+        padding-top: 26vh;
+    }
+
+    .form-btn{
+        margin-top: 4vh;
+    }
+}

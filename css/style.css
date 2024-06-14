@@ -87,7 +87,7 @@ a{
     position: relative; 
 }
 
-.nav-right ul li a::after, .footer-social ul li a::after, .footer-links ul li a::after, .email-par::after {
+.nav-right ul li a::after, .footer-social ul li a::after, .footer-links ul li a::after, .email-par::after, .form-div::after {
     content: '';
     position: absolute;
     left: 0;
@@ -98,7 +98,7 @@ a{
     transition: width 0.5s ease-in-out;
 }
 
-.nav-right ul li a:hover::after, .footer-social ul li a:hover::after, .footer-links ul li a:hover::after, .email-par:hover::after {
+.nav-right ul li a:hover::after, .footer-social ul li a:hover::after, .footer-links ul li a:hover::after, .email-par:hover::after, .form-div:hover::after {
     width: 100%;
 }
 
@@ -145,6 +145,7 @@ button a{
 
 button:hover{
     opacity: 100%;
+    transition: 0.5s ease;
 } 
 
 
@@ -219,9 +220,8 @@ button:hover{
     transition: 0.5s ease-in;
 }
 
-#services{
+#services, #location{
     width: 100%;
-    
     padding-bottom: 50px;
 }
 
@@ -619,301 +619,6 @@ footer p{
 
     #menu-icon {
         display: none;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-    body, .firstpage, .navbar, #home, #services, #discovery, #blog, footer {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    #blog{
-        padding-bottom: 20px;
-    }
-    #services, #blog, #discovery{
-        align-items: center;
-        text-align: center;
-    }
-
-    #services, #blog, .footer-office{
-        width: 100%;
-        display: block; 
-        text-align: center; 
-    }
-    .navbar {
-        flex-direction: row;
-        align-items: center;
-        padding: 0 18px;
-        min-height: 10vh;
-        position: fixed;
-    }
-
-    .service-heading{
-        width: 100%;
-    }
-
-    .nav-left,
-    .nav-right {
-        margin: 10px 0;
-        gap: 10px;
-    }
-
-    .nav-right ul {
-        flex-direction: column;
-        /* align-items: center; */
-        gap: 10px;
-    }
-
-    .nav-right ul li a {
-        font-size: 20px;
-        letter-spacing: 0.5px;
-        margin-bottom: 14px;
-        color: white;
-    }
-
-    .nav-right ul li{
-        width: 100%;
-        padding-left: 20px;
-    }
-
-
-    .home-right-content {
-        text-align: center;
-        margin: 10px 50px;
-        margin-top: -14rem;
-    }
-
-    .home-right-content h2 {
-        font-size: 28px;
-        line-height: 34px;
-    }
-
-    .service-heading h1, .discovery-right-content h1, .blog-heading h1{ 
-        font-size: 24px;
-        line-height: 34px;
-        margin: 10px 50px;
-    }
-
-    .service-heading p, .par {
-        font-size: 10px;
-    }
-
-    .services-button button{
-        margin: auto;
-    }
-
-    .home-right-content p, .par-content{
-        font-size: 14px;
-    }
-
-    .par-content{
-        margin: 10px 50px;
-    }
-
-    .home-right-content .btn {
-        padding: 15px;
-    }
-
-    .discovery-right-content h3{
-        text-align: left;
-        margin: 10px 50px;
-    }
-
-
-    .home-right-content .btn a {
-        font-size: 12px;
-    }
-
-    .image-container {
-        margin: 20px 0;
-        margin-top: 60px;
-    }
-
-    .socials {
-        font-size: 16px;
-        margin-top: 10px;
-    }
-
-    .socials li {
-        padding: 2px 5px;
-    }
-
-    section {
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    }
-    
-    section.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    .card {
-        height: auto;
-        width: auto;;
-        margin-bottom: 20px;
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    }
-
-    .card.show, .blog-card.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .blog-card {
-        height: 56vh;
-        width: 100%;
-        margin-bottom: 50px;
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    }
-
-    .services-content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .blog-content{
-        flex-direction: column;
-        margin: 0 3%;
-    }
-
-    .blog-heading{
-        width: 100%;
-        margin-top: -2px;
-        margin-bottom: 12px;
-    }
-
-    .discovery-left,
-    .discovery-right-content {
-        width: 100%;
-        margin: 20px 0;
-        padding: 0 10px;
-    }
-
-
-    .footer-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .email-par{
-        width: 100%;
-    }
-
-    .footer-office,
-    .footer-links,
-    .footer-social, .copyright {
-        padding: 0 20px;
-        padding-top: 40px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .discovery-left-image img{
-        height: auto;
-        width: 100%;
-        margin-top: 70px;
-    }
-
-    .blog-card-img img{
-        height: 36vh;
-        width: 100%;
-    }
-
-    .blog-card-content h1{
-        -webkit-line-clamp: 2;
-        font-size: 18px;
-    }
-
-    .blog-card-content p{
-        font-size: 10px;
-        color: var(--font-color);
-        opacity: 100%;
-    }
-
-    .blog-time-content{
-        position: relative;
-        left: 66%;
-        height: auto;
-        bottom: 28px;
-    }
-
-    .blog-time-content h3{
-        padding: 0;
-        font-size: 12px;
-    }
-
-    .blog-button button{
-        margin: auto;
-    }
-    
-
-    .nav-right ul, .nav-right button {
-        display: none;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-        opacity: 80%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        padding-top: 50px;
-        z-index: 11;
-    }
-
-    .nav-links.active {
-        display: flex;
-        z-index: 111;
-        color: white;
-        padding-top: 66px;
-        margin: 0; 
-    }    
-/* 
-    .nav-links li a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        margin: 10px 0;
-
-    } */
-
-    #menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: pointer;
-        color: black; 
-    }
-
-    .nav-links.active #close-icon {
-        display: block; 
-    }
-
-    .nav-links.active #menu-icon {
-        display: none;
-    }
-
-    .nav-right ul li a::after, .footer-social ul li a::after, .footer-links ul li a::after, .email-par::after{
-        background-color: white;
-    }
-
-
-    .nav-right ul li a:hover::after, .footer-social ul li a:hover::after, .footer-links ul li a:hover::after, .email-par:hover::after {
-        width: 100%;
     }
 
 }
