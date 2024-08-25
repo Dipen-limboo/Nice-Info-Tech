@@ -612,7 +612,7 @@ footer p{
 
 
 @media (min-width: 1281px) {
-    body, .firstpage, .navbar, #home, #services, #discovery, #blog, footer {
+    body, .firstpage, .navbar, #services, #discovery, #blog, footer {
         max-width: 1280px; 
         margin: 0 auto;
     }
