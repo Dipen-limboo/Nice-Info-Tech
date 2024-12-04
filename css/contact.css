@@ -51,6 +51,7 @@
 
 .services-content{
     margin-top: 0;
+    cursor: pointer;
 }
 
 .services-button button {

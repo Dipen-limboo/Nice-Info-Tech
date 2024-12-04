@@ -6,6 +6,7 @@
     <title>NICE infoTech</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/ipad.css">
     <script type="text/javascript" src="./js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" />
@@ -23,8 +24,8 @@
                     <i class="fa fa-times" id="close-icon"></i>
                     <ul class="nav-links">
                         <li><a class="active" href="#home">Home</a></li>
-                        <li><a href="#services">Pages</a></li>
-                        <li><a href="#discovery">Portfolio</a></li>
+                        <li><a href="./html/about.html">About</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="./html/contactus.html">Contacts</a></li>
                     </ul>
@@ -40,9 +41,9 @@
                     <button class="btn"><a href="#services">Check-out services</a></button>
 
                     <ul class="socials">
-                        <li><i class="fa-brands fa-facebook-f"><a href="https://www.facebook.com/profile.php?id=61558987903814&mibextid=ZbWKwL"></a></i></li>
-                        <li><i class="fa-brands fa-linkedin-in"><a href="https://www.linkedin.com/company/nice-info-tech/"></a></i></li>
-                        <li><i class="fa-brands fa-instagram"><a href="#"></a></i></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61558987903814&mibextid=ZbWKwL" style="color: blue;"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/nice-info-tech/" style="color: blue;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" style="color: red;"></i></a></li>
                     </ul>
             </div>
         </div>
@@ -91,7 +92,7 @@
             </div>
         </div>
         <div class="services-button">
-            <button><a href="#">More features</a></button>
+            <button id="service-features">More features</button>
         </div>
     </section>
     <section id="discovery">
@@ -170,8 +171,8 @@
                 <h4>Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Pages</a></li>
-                    <li><a href="#discovery">Portfolio</a></li>
+                    <li><a href="./html/about.html">About</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="./html/contactus.html">Contacts</a></li>
                 </ul>
@@ -190,5 +191,10 @@
             <p>NICE Info Tech <sup>©</sup> 2024. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById("service-features").addEventListener("click", function(){
+            window.location.href="./html/features.html";
+        })
+    </script>
 </body>
 </html>

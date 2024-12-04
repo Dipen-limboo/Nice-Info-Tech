@@ -143,6 +143,14 @@ button a{
     text-transform: capitalize;
 }
 
+button{
+    color: var(--font-secondary-color);
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 button:hover{
     opacity: 100%;
     transition: 0.5s ease;
@@ -171,17 +179,18 @@ button:hover{
 }
 
 .home-right-content {
-    width: 510px;
-    margin-right: 169px;
+    width: 38rem;
+    margin-right: 5rem;
 }
 
 .home-right-content h2 {
-    margin-top: 232px;
+    margin-top: 13rem;
     font-size: 62px;
     color: var(--font-color);
     opacity: 90%;
-    line-height: 56px;
+    line-height: 3.85rem;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 .home-right-content p {
@@ -189,7 +198,8 @@ button:hover{
     text-align: justify;
     color: var(--font-color);
     opacity: 60%;
-    line-height: 20px;
+    font-size: 1.2rem;
+    line-height: 1.85rem;
 }
 
 .home-right-content .btn{
@@ -316,6 +326,7 @@ button:hover{
 section, .home-right-content, .card, .blog-card {
     opacity: 0;
     transform: translateY(100px);
+    margin-top: 20px;
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
