@@ -144,7 +144,6 @@
     }
 
     .blog-card {
-        height: 56vh;
         width: 100%;
         margin-bottom: 50px;
         opacity: 0;
@@ -188,7 +187,7 @@
     .footer-office,
     .footer-links,
     .footer-social, .copyright {
-        padding: 0 14%;
+        padding: 0 6%;
         padding-top: 40px;
         width: 100%;
         text-align: center;
@@ -302,7 +301,8 @@
 
     /*about*/
     .about-container {
-        padding: 7rem 2rem 2rem;
+        padding: 7rem 1.25rem 5rem;
+        letter-spacing: 0.5px;
     }
 
     .about-container > h1{
@@ -311,5 +311,29 @@
 
     .about-container > p{
         font-size: 1.25rem;
+    }
+
+    #about-section-info{
+        padding-top: 0.5rem;
+    }
+    .about-image{
+        width: 100%;
+    }
+
+    .about-image img{
+        height: 60vh;
+        object-fit: cover;
+    }
+
+    .about-section-info-content{
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .about-section-info-content{
+        order: 1;
+    }
+    .about-container h2{
+        font-size: 1.5rem;
     }
 }
