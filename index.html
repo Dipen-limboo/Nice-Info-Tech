@@ -26,7 +26,7 @@
                         <li><a class="active" href="#home">Home</a></li>
                         <li><a href="./html/about.html">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="./html/blog.html">Blog</a></li>
                         <li><a href="./html/contactus.html">Contacts</a></li>
                     </ul>
                     <button><a href="./html/contactus.html">Let's Talk</a></button>
@@ -155,7 +155,7 @@
             </div>
         </div>
         <div class="blog-button">
-            <button><a href="#"> View Solutions</a></button>
+            <button id="solution-button">View Solutions</button>
         </div>
     </section>
     <footer>
@@ -173,7 +173,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="./html/about.html">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="./html/blog.html">Blog</a></li>
                     <li><a href="./html/contactus.html">Contacts</a></li>
                 </ul>
             </div>
@@ -197,6 +197,9 @@
         })
         document.getElementById("discover-button").addEventListener("click", function (){
             window.location.href="./html/about.html"
+        })
+        document.getElementById("solution-button").addEventListener("click", function () {
+            window.location.href="./html/blog.html"
         })
     </script>
 </body>

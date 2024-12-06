@@ -390,7 +390,7 @@ section.show,.card.show, .blog-card.show, .home-right-content.show {
     height: 220px;
     /* border-top-left-radius: 20px; */
     border-top-right-radius: 20px;
-    object-fit: contain;
+    object-fit: contain; 
 }
 
 .blog-content{

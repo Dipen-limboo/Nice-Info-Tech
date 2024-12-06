@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NICE infoTech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/ipad.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="#home"><img src="../image/Logo.png" alt="Here is an logo"></a>
+                <!-- <h1> InfoTech</h1> -->
+            </div>
+            <div class="nav-right" id="myTopnav">
+                <i class="fa fa-bars" id="menu-icon"></i>
+                <i class="fa fa-times" id="close-icon"></i>
+                <ul class="nav-links">
+                    <li><a  href="../index.html#home">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contactus.html">Contacts</a></li>
+                </ul>
+                <button><a href="./contactus.html">Let's Talk</a></button>
+            </div>
+        </nav>
+    </header>
+    <section id="blog-container-section">
+        <h1>Our Blogs</h1>
+        <div class="blog-content-container">
+            <div class="blog-image-div">
+                <img src="../image/hugrun.png" alt="Blog Image 1">
+            </div>
+            <div class="blog-content-div">
+                <h2>Hugrún: Advocating Mental Health</h2>
+                <div class="blog-date">Published on: August 23, 2024</div>
+                <p>Hugrún, founded in 2016, is dedicated to educating youth about mental health and breaking stigmas. As their tech partner, we’ve enhanced their website to provide accessible resources, interactive tools, and support their mission to empower young people across Iceland.</p>
+                <p><strong>Project Type:</strong> Website</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Laravel, MySQL</p>
+            </div>
+        </div>
+        <div class="blog-content-container">
+            <div class="blog-image-div">
+                <img src="../image/infotech.png" alt="Blog Image 2">
+            </div>
+            <div class="blog-content-div">
+                <h2>NICE Info Tech: Innovating Technology</h2>
+                <div class="blog-date">Published on: June 7, 2024</div>
+                <p>Nice Info Tech is a dynamic tech company dedicated to delivering innovative, reliable, and scalable software solutions. With a client-first approach, our expert team combines creativity and precision to help businesses overcome challenges, seize opportunities, and achieve their goals through cutting-edge technology.</p>
+                <p><strong>Project Type:</strong> Website</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-section">
+            <div class="footer-office">
+                <img src="../image/logo2.png" alt="logo here">
+                <p>NICE Info Tech provides the better quality and services effectively and efficiently.</p>
+                <p>Kathmandu, Nepal</p>
+                <p class="email-par">niceinfotech111@gmail.com</p>
+                <h4>(+977) 986-333-4426</h4>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contactus.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Socials</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61558987903814&mibextid=ZbWKwL">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/nice-info-tech/">Linkedln</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>NICE Info Tech <sup>©</sup> 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const blogContainers = document.querySelectorAll('.blog-content-container');
+        let isBlurred = false;
+    
+        blogContainers.forEach(container => {
+            container.addEventListener('click', function(event) {
+                event.stopPropagation();
+    
+                if (isBlurred) {
+                    blogContainers.forEach(item => {
+                        item.classList.remove('blur');
+                        item.style.transform = ''; 
+                    });
+                    isBlurred = false;
+                } else {
+                    blogContainers.forEach(item => {
+                        if (item !== container) {
+                            item.classList.add('blur');
+                            item.style.transform = ''; 
+                        }
+                    });
+                    container.classList.remove('blur');
+                    container.style.transform = 'scale(1.03)'; 
+                    isBlurred = true;
+                }
+            });
+        });
+    
+        document.addEventListener('click', function() {
+            if (isBlurred) {
+                blogContainers.forEach(item => {
+                    item.classList.remove('blur');
+                    item.style.transform = '';
+                });
+                isBlurred = false;
+            }
+        });
+    });
+    </script>
+</body>
+</html>
