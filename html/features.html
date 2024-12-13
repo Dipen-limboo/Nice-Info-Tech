@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <a href="#home"><img src="../image/Logo.png" alt="Here is an logo"></a>
+                <a href="../index.html"><img src="../image/Logo.png" alt="Here is an logo"></a>
                 <!-- <h1> InfoTech</h1> -->
             </div>
             <div class="nav-right" id="myTopnav">
@@ -91,7 +91,9 @@
                 <img src="../image/logo2.png" alt="logo here">
                 <p>NICE Info Tech provides the better quality and services effectively and efficiently.</p>
                 <p>Kathmandu, Nepal</p>
-                <p class="email-par">niceinfotech111@gmail.com</p>
+                <p class="email-par" >
+                    niceinfotech111@gmail.com
+                </p>
                 <h4>(+977) 986-333-4426</h4>
             </div>
             <div class="footer-links">
@@ -118,5 +120,12 @@
             <p>NICE Info Tech <sup>©</sup> 2024. All Rights Reserved.</p>
         </div>
     </footer>
+    <script>
+        document.querySelector('.email-par').addEventListener('click', function () {
+            const email = 'niceinfotech111@gmail.com';
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+            window.open(gmailUrl, '_blank');
+            });
+    </script>
 </body>
 </html>

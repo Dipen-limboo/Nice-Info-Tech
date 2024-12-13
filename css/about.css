@@ -77,3 +77,7 @@
     min-height: 80vh;
 }
 
+.about-section-info-content p {
+    opacity: 0.9;
+    color: var(--font-color);
+}

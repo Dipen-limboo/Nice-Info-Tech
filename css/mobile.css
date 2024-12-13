@@ -336,4 +336,8 @@
     .about-container h2{
         font-size: 1.5rem;
     }
+
+    section#about-section-goal {
+        background: none;
+    }
 }

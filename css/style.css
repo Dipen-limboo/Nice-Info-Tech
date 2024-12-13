@@ -423,6 +423,16 @@ section.show,.card.show, .blog-card.show, .home-right-content.show {
     background: transparent;
     box-shadow:6px 6px 6px grey;
     border-bottom-left-radius: 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.blurred {
+    filter: blur(1.5px); 
 }
 
 .blog-time-content{
