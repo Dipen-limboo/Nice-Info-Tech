@@ -25,7 +25,7 @@
                     <ul class="nav-links">
                         <li><a  href="../index.html#home">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="../index.html#services">Services</a></li>
+                        <li><a href="./features.html">Services</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a class="active" href="./contactus.html">Contacts</a></li>
                     </ul>
@@ -94,7 +94,7 @@
             </div>
             <div class="contact-div">
                 <i class="fa-regular fa-envelope"></i>
-                <p>niceinfotech111@gmail.com</p>
+                <p class="email-to">niceinfotech111@gmail.com</p>
             </div>
             </div>
         <div class="discovery-left">
@@ -166,6 +166,11 @@
     </footer>
     <script>
         document.querySelector('.email-par').addEventListener('click', function () {
+            const email = 'niceinfotech111@gmail.com';
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+            window.open(gmailUrl, '_blank');
+        });
+        document.querySelector('.email-to').addEventListener('click', function () {
             const email = 'niceinfotech111@gmail.com';
             const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
             window.open(gmailUrl, '_blank');
